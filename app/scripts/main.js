@@ -3,7 +3,7 @@
 
 (function() {
   window.Air = {
-    api: 'https://brazil-sensor.herokuapp.com/api/v1',
+    api: 'http://opendustmap.herokuapp.com/api/v1',
     Models: {},
     Collections: {},
     Views: {},
