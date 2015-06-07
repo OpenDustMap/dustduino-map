@@ -35,7 +35,7 @@ Air.Views = Air.Views || {};
       }.bind(this));
 
       // Cache id fields
-      this.fields = ['longitude', 'latitude', 'description', 'email', 'arduino'];
+      this.fields = ['longitude', 'latitude', 'sensor_name', 'description', 'email', 'arduino'];
       this.fields.forEach(function(field) {
         this['$' + field] = this.$('input[name="' + field + '"]');
       }.bind(this));
