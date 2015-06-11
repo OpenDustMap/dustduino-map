@@ -223,6 +223,9 @@ module.exports = function (grunt) {
         },
 
         sass: {
+            options: {
+                bundleExec: true
+            },
             dist: {
                 files: {
                     '<%= yeoman.app %>/styles/main.css': [

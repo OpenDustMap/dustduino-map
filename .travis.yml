@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+- '0.12'
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+- chmod +x ./.build_scripts/deploy.sh
+- npm install -g bower
+- npm install -g grunt grunt-cli
+
+install:
+- npm install
+- bower install
+- bundle install
+
+script:
+- grunt build
+
+after_success:
+- ./.build_scripts/deploy.sh
