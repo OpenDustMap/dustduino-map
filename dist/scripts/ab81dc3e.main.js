@@ -6,7 +6,7 @@ var __t, __p = '', __e = _.escape;
 with (obj) {
 __p += '<div class="container edit" id="' +
 ((__t = ( id )) == null ? '' : __t) +
-'">\n  <div class="row">\n    <div class="minimap col-sm-12 col-md-12 col-lg-6 map-padding">\n      <label class="main-label">Click on the map to add your location</label>\n      <div id="minimap" style="position:relative;top:0px;height:400px;" ></div>\n    </div>\n    <div class="col-sm-12 col-md-12 col-lg-6 form-padding">\n      <div class=\'notify\' id="message-box">\n        <p id="notify-message"></p>\n      </div>\n      <label class="main-label">Manage your device </label>\n      <form>\n        <div class="form-group">\n          <label for="latitude">Latitude</label>\n          <input type="text" name="latitude" placeholder="0.0" id="latitude">\n        </div>\n        <div class="form-group">\n          <label for="longitude">Longitude</label>\n          <input type="text" name="longitude" placeholder="0.0" id="longitude">\n        </div>\n        <div class="form-group">\n          <label for="description">Description</label>\n          <input type="text" name="description" placeholder="Enter a description of your device" id="description">\n        </div>\n        <div class="form-group">\n          <label for="email">Email</label>\n          <input type="email" name="email" id="email" placeholder="Enter your email here" />\n        </div>\n        <div class="form-group">\n          <label for="arduino">Arduino Token</label>\n          <input type="text" name="arduino" placeholder="Enter Arduino Token" id="arduino">\n        </div>\n        <input type="submit" class="edit-submit" value="Submit">\n      </form>\n    </div>\n  </div>\n</div>';
+'">\n  <div class="row">\n    <div class="minimap col-sm-12 col-md-12 col-lg-6 map-padding">\n      <label class="main-label">Click on the map to add your location</label>\n      <div id="minimap" style="position:relative;top:0px;height:400px;" ></div>\n    </div>\n    <div class="col-sm-12 col-md-12 col-lg-6 form-padding">\n      <div class=\'notify\' id="message-box">\n        <p id="notify-message"></p>\n      </div>\n      <label class="main-label">Manage your device </label>\n      <form>\n        <div class="form-group">\n          <label for="latitude">Latitude</label>\n          <input type="text" name="latitude" placeholder="0.0" id="latitude">\n        </div>\n        <div class="form-group">\n          <label for="longitude">Longitude</label>\n          <input type="text" name="longitude" placeholder="0.0" id="longitude">\n        </div>\n        <div class="form-group">\n          <label for="sensor_name">Sensor Name</label>\n          <input type="text" name="sensor_name" placeholder="Enter the name of your device" id="sensor_name">\n        </div>\n        <div class="form-group">\n          <label for="description">Description</label>\n          <input type="text" name="description" placeholder="Enter a description of your device" id="description">\n        </div>\n        <div class="form-group">\n          <label for="email">Email</label>\n          <input type="email" name="email" id="email" placeholder="Enter your email here" />\n        </div>\n        <div class="form-group">\n          <label for="arduino">Arduino Token</label>\n          <input type="text" name="arduino" placeholder="Enter Arduino Token" id="arduino">\n        </div>\n        <input type="submit" class="edit-submit" value="Submit">\n      </form>\n    </div>\n  </div>\n</div>';
 
 }
 return __p
@@ -135,7 +135,7 @@ return __p
 
 (function() {
   window.Air = {
-    api: 'https://brazil-sensor.herokuapp.com/api/v1',
+    api: 'http://opendustmap.herokuapp.com/api/v1',
     Models: {},
     Collections: {},
     Views: {},
@@ -947,7 +947,7 @@ Air.Views = Air.Views || {};
       }.bind(this));
 
       // Cache id fields
-      this.fields = ['longitude', 'latitude', 'description', 'email', 'arduino'];
+      this.fields = ['longitude', 'latitude', 'sensor_name', 'description', 'email', 'arduino'];
       this.fields.forEach(function(field) {
         this['$' + field] = this.$('input[name="' + field + '"]');
       }.bind(this));
