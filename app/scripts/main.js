@@ -3,7 +3,7 @@
 
 (function() {
   window.Air = {
-    api: 'http://opendustmap.herokuapp.com/api/v1',
+    api: 'http://api.opendustmap.com/v1',
     Models: {},
     Collections: {},
     Views: {},
