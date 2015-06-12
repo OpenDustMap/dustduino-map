@@ -30,3 +30,4 @@ This project is set up with [Travis](https://travis-ci.org/) deploy scripts alre
 
 - **GH_REF** - the URL of the repo, similar to `github.com/developmentseed/dustduino-map.git`
 - **GH_TOKEN** - a GitHub personal access token available from https://github.com/settings/tokens
+
