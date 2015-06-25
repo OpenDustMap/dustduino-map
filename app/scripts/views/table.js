@@ -16,7 +16,7 @@ Air.Views = Air.Views || {};
         render: function() {
 
             var properties = ['hour_code', 'pm10', 'pm10count', 'pm25', 'pm25count'];
-            var headers = ['Created', 'PM 10 reading', 'PM 10 count', 'PM 2.5 reading', 'PM 2.5 count'];
+            var headers = ['Created <span title="Coordinated Universal Time" class="table-unit">(UTC)</span>', 'PM10 <span title="micrograms per cubic meter" class="table-unit">&#181;g/m<sup>3</sup></span>', 'PM10 Count <span title="particles per 0.01 cubic feet" class="table-unit">pt/cf</span>', 'PM2.5 <span title="micrograms per cubic meter" class="table-unit">&#181;g/m<sup>3</sup></span>', 'PM2.5 Count <span title="particles per 0.01 cubic feet" class="table-unit">pt/cf</span>'];
 
             // fix our headers to show properly formatted dates
             var input = d3.time.format('%Y%m%d%H');
