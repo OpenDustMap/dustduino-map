@@ -130,6 +130,9 @@ body,
     font-size: 18px;
     line-height: 28px; } }
 
+#google_translate_element {
+  float: right; }
+
 /****************************************************/
 /************** Typography **************************/
 h1, h2 {
