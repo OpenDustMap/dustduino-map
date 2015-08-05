@@ -72,17 +72,17 @@
       <!-- endbuild -->
 
       <script>
-var $air = $('#air');
-var nav = responsiveNav(".nav-collapse", {
-  label: "",
-  customToggle: "nav-toggle",
-  open:function(){
-    $air.addClass('expanded-menu');
-  },
-  close: function() {
-    $air.removeClass('expanded-menu');
-  },
-});
+        var $air = $('#air');
+        var nav = responsiveNav(".nav-collapse", {
+          label: "",
+          customToggle: "nav-toggle",
+          open:function(){
+            $air.addClass('expanded-menu');
+          },
+          close: function() {
+            $air.removeClass('expanded-menu');
+          },
+        });
       </script>
 
       <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js"></script>
@@ -106,5 +106,6 @@ var nav = responsiveNav(".nav-collapse", {
       <script src="scripts/views/header.js"></script>
       <script src="scripts/views/edit.js"></script>
       <!-- endbuild -->
+
   </body>
 </html>
